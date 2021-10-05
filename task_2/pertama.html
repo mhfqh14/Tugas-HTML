@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Halaman Pendaftaran</title>
+        <style>
+            body{
+                background-color: blueviolet;
+            }
+            p {
+                font-size: 16px;
+                color: white;
+            }
+            #header {
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                text-align: center;
+                background: indigo;
+                color: whitesmoke;
+                height: 150px;
+                padding: 25px;
+            }
+            .h1{
+              font-size: 50px;  
+            }
+            .legend{
+                color: white;
+                font-style: inherit;
+                font-size: 24px;
+            }  
+    
+            #fieldset{
+                background-color: orchid;
+                width: 300px;
+                padding: 25px;
+                margin: 250px auto;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <header id="header">
+            <h1 class="h1">Selamat Datang Di Halaman Pendaftaran</h1>
+        </header>
+        <form action="kedua.html" method="GET">
+            <fieldset id="fieldset">
+                <legend class="legend">From Registrasi</legend>
+                <p>
+                    <label>Nama:</label>
+                    <input type="text" name="info" placeholder="Nama Lengkap"/>
+                </p>
+                <p>   
+                    <label>Email:</label>
+                    <input type="email" name="email" placeholder="example@gmail.com"/>
+                </p>    
+                <p>   
+                    <label>Jenis Kelamin:</label>
+                    <label><input type="radio" name="jenis_kelamin" value="laki-laki" />Laki-laki</label>
+                    <label><input type="radio" name="jenis_kelamin" value="perempuan" />Perempuan</label>
+                </p>
+                <p>    
+                    <label>Alamat:</label>
+                    <textarea name="alamat"></textarea>
+                </p>
+                <p>
+                    <input type="submit" name="submit" value="Daftar"/>
+                </p> 
+            </fieldset>
+        </form>
+        <footer id="footer">
+            <p style="text-align: center;">
+                By Muhammad Faqih (119140012)
+            </p>
+        </footer>
+    </body>
+</html>
